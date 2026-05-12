@@ -50,6 +50,15 @@ public class matrices{
                 bottom--;
             }
         }
+        
+        // copying a matrix into another matrix
+        // int[][] B = new int[A.length][A[0].length];
+
+        // for (int i = 0; i < A.length; i++) {
+           // System.arraycopy(A[i], 0, B[i], 0, A[0].length);
+        //}
+        // int b=6;
+        // System.out.println(b);
 
     }
 }

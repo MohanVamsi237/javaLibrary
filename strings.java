@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 class Leetcode{
     public static void main(){
         // convert num to binary string
@@ -18,6 +20,11 @@ class Leetcode{
         // replacing of a char in a string
         int a=Integer.parseInt(p1[1].replace("i",""));
         System.out.println(a);
+
+        // convert binary string to num using BigInteger
+        String binary="101101";
+        BigInteger num = new BigInteger(binary, 2);
+        System.out.println(num);
 
         
     }
