@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class matrices{
     public static void main(String[] args) {
 
@@ -60,5 +62,12 @@ public class matrices{
         // int b=6;
         // System.out.println(b);
 
+        // sorting of matrix based on first column
+        int[][] arr = {
+            {3, 10},
+            {1, 20},
+            {2, 15}
+        };
+        Arrays.sort(arr, (a, b) -> a[0] - b[0]);
     }
 }

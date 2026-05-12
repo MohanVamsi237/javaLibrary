@@ -26,6 +26,8 @@ class Leetcode{
         BigInteger num = new BigInteger(binary, 2);
         System.out.println(num);
 
-        
+        // sort strings based on their length
+        String[] arr = {"apple", "hi", "banana"};
+        Arrays.sort(arr, (a, b) -> a.length() - b.length());
     }
 }

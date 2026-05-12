@@ -22,5 +22,11 @@ public class arrays {
 
         // checks whether the elements of the array are equal
         //Arrays.equals(a1, a2)
+
+        int[] arr = {5, 2, 8, 1};
+        // ascending order
+        Arrays.sort(arr, (a, b) -> a - b);
+        // descending order
+        Arrays.sort(arr, (a, b) -> b - a);
     }
 }
