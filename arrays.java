@@ -28,5 +28,11 @@ public class arrays {
         Arrays.sort(arr, (a, b) -> a - b);
         // descending order
         Arrays.sort(arr, (a, b) -> b - a);
+
+        // copying of an array into another array
+        int[] ans = new int[nums.length*2];
+        System.arraycopy(nums,0,ans,0,nums.length);
+        System.arraycopy(nums,0,ans,nums.length,nums.length);
+        return ans;
     }
 }

@@ -10,5 +10,17 @@ public class sets {
         }
         System.out.println(set);
 
+        // returns the size of the set
+        set.size();
+
+        // removes an element
+        set.remove(10);
+
+        // checks whether the element exists in set or not
+        set.contains(20);
+
+        // checks whether the set is empty or not
+        set.isEmpty();
+
     }  
 }

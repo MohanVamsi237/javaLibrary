@@ -53,6 +53,10 @@ public class lists {
         }
 
 
-        
+        // sorting of a list
+        Collections.sort(list);
+
+        // reverse sorting of a lists
+        Collections.sort(list, Collections.reverseOrder());
     }
 }
