@@ -1,5 +1,4 @@
-import java.math.BigInteger;
-
+import java.util.*;
 class Leetcode{
     public static void main(){
         // convert num to binary string
@@ -29,5 +28,10 @@ class Leetcode{
         // sort strings based on their length
         String[] arr = {"apple", "hi", "banana"};
         Arrays.sort(arr, (a, b) -> a.length() - b.length());
+
+        // conversion of primitive datatypes to string
+        int n = 123;
+        String s1 = String.valueOf(n);
+        System.out.println(s1);
     }
 }
