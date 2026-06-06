@@ -58,5 +58,8 @@ public class lists {
 
         // reverse sorting of a lists
         Collections.sort(list, Collections.reverseOrder());
+
+        // reverse of a list
+        Collections.reverse(list);
     }
 }
