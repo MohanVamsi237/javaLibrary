@@ -33,5 +33,10 @@ class Leetcode{
         int n = 123;
         String s1 = String.valueOf(n);
         System.out.println(s1);
+
+        // trim and striptrailing methods
+        String s4 = "   Hello World   ";
+        System.out.println("'" + s.trim() + "'");
+        System.out.println("'" + s.stripTrailing() + "'");
     }
 }
