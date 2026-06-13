@@ -12,9 +12,17 @@ class Leetcode{
         System.out.println(a2);
 
         // to split string into two parts based on a symbol
+            // in the below example we are splitting the string into two parts based on the symbol '+'
         String s3="1+3i";
         String[] p1=s3.split("\\+");
         System.out.println(p1[1]);
+
+        // splitting of sentence into words despite multiple spaces
+        String sentence = "  Hello   World  ";
+        String[] words = sentence.trim().split("\\s+");
+        for (String word : words) {
+            System.out.println(word);
+        }
 
         // replacing of a char in a string
         int a=Integer.parseInt(p1[1].replace("i",""));
@@ -36,7 +44,15 @@ class Leetcode{
 
         // trim and striptrailing methods
         String s4 = "   Hello World   ";
-        System.out.println("'" + s.trim() + "'");
-        System.out.println("'" + s.stripTrailing() + "'");
+        System.out.println("'" + s4.trim() + "'");
+        System.out.println("'" + s4.stripTrailing() + "'");
+
+        // String to charArray 
+        String s5 = "Hello";
+        for(char c : s5.toCharArray()) {
+            System.out.println(c);
+        }
+
+        
     }
 }
