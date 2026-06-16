@@ -11,6 +11,11 @@ class Leetcode{
         int a2=Integer.parseInt(s2,2);
         System.out.println(a2);
 
+        // convert binary string to num using BigInteger
+        String binary="101101";
+        BigInteger num = new BigInteger(binary, 2);
+        System.out.println(num);
+
         // to split string into two parts based on a symbol
             // in the below example we are splitting the string into two parts based on the symbol '+'
         String s3="1+3i";
@@ -28,11 +33,15 @@ class Leetcode{
         int a=Integer.parseInt(p1[1].replace("i",""));
         System.out.println(a);
 
-        // convert binary string to num using BigInteger
-        String binary="101101";
-        BigInteger num = new BigInteger(binary, 2);
-        System.out.println(num);
+        // substring method
+        String str = "Hello World";
+        String sub = str.substring(0, 5);
+        System.out.println(sub);
 
+        // sorting array of strings in lexicographical order
+        String[] arr = {"banana", "apple", "cherry"};
+        Arrays.sort(arr);
+        
         // sort strings based on their length
         String[] arr = {"apple", "hi", "banana"};
         Arrays.sort(arr, (a, b) -> a.length() - b.length());
@@ -53,6 +62,12 @@ class Leetcode{
             System.out.println(c);
         }
 
+        // check lowercase method
+        char ch=s4.charAt(2);
+        if(Character.isLowerCase(ch)){
+            System.out.println("lowercase");
+        }
+        
         
     }
 }
