@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 public class arrays {
     public static void main(String[] args) {
         // to return some array elements as an array
@@ -23,21 +23,20 @@ public class arrays {
         // checks whether the elements of the array are equal
         //Arrays.equals(a1, a2)
 
-        int[] arr = {5, 2, 8, 1};
+        Integer[] nums = {5, 2, 8, 1};
         // ascending order
-        Arrays.sort(arr, (a, b) -> a - b);
+        Arrays.sort(nums, (a, b) -> a - b);
         // descending order
-        Arrays.sort(arr, (a, b) -> b - a);
+        Arrays.sort(nums, (a, b) -> b - a);
 
         // copying of an array into another array
         int[] ans = new int[nums.length*2];
         System.arraycopy(nums,0,ans,0,nums.length);
         System.arraycopy(nums,0,ans,nums.length,nums.length);
-        return ans;
 
         // binarysearch method
-        int[] arr = {1, 2, 3, 4, 5};
-        int index = Arrays.binarySearch(arr, 3);
+        int[] arr3 = {1, 2, 3, 4, 5};
+        int index = Arrays.binarySearch(arr3, 3);
         System.out.println(index);
 
         

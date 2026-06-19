@@ -41,10 +41,16 @@ class Leetcode{
         // sorting array of strings in lexicographical order
         String[] arr = {"banana", "apple", "cherry"};
         Arrays.sort(arr);
+        for (String x : arr) {
+            System.out.println(x);
+        }
         
         // sort strings based on their length
-        String[] arr = {"apple", "hi", "banana"};
-        Arrays.sort(arr, (a, b) -> a.length() - b.length());
+        String[] arr2 = {"apple", "hi", "banana"};
+        Arrays.sort(arr2, (c, d) -> c.length() - d.length());
+        for (String y : arr2) {
+            System.out.println(y);
+        }
 
         // conversion of primitive datatypes to string
         int n = 123;
@@ -68,6 +74,10 @@ class Leetcode{
             System.out.println("lowercase");
         }
         
-        
+        // character is letter or digit
+        char ch2='v';
+        char ch3='0';
+        System.out.println(Character.isLetter(ch2));
+        System.out.println(Character.isDigit(ch3));
     }
 }
