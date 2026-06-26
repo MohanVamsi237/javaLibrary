@@ -25,20 +25,7 @@ public class lists {
                 row.add(result.get(i - 1).get(j - 1) + result.get(i - 1).get(j));
             }
         }
-
-
-        // finding the first and second minimum element in a list
-        int min = Integer.MAX_VALUE;
-        int secondMin = Integer.MAX_VALUE;
-        for (int num : list) {
-            if (num < min) {
-                secondMin = min;
-                min = num;
-            } else if (num > min && num < secondMin) {
-                secondMin = num;
-            }
-        }
-
+        result.add(row);
 
         // finding the first and second maximum element in a list
         int max = Integer.MIN_VALUE;
@@ -61,5 +48,7 @@ public class lists {
 
         // reverse of a list
         Collections.reverse(list);
+
+
     }
 }
