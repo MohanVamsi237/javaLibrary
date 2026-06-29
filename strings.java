@@ -79,5 +79,10 @@ class Leetcode{
         char ch3='0';
         System.out.println(Character.isLetter(ch2));
         System.out.println(Character.isDigit(ch3));
+
+        // contains method
+        String s6="abcde";
+        String s7="bc";
+        System.out.println(s6.contains(s7));
     }
 }
