@@ -1,6 +1,11 @@
 import java.util.*;
 class Leetcode{
     public static void main(){
+        // stringbuilder to string
+        StringBuilder sb = new StringBuilder("Hello");
+        String str = sb.toString();
+        System.out.println(str);
+        
         // convert num to binary string
         int a1=5;
         String s=Integer.toBinaryString(a1);
