@@ -39,6 +39,9 @@ public class arrays {
         int index = Arrays.binarySearch(arr3, 3);
         System.out.println(index);
 
-        
+        // arrays fill method
+        int[] arr4=new int[5];
+        Arrays.fill(arr4, 10);
+        System.out.println(Arrays.toString(arr4));
     }
 }
