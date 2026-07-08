@@ -19,6 +19,8 @@ public class basics {
         char ch=(char)('z'-num);
         System.out.println(ch);                                                          // m
 
-        
+        // char(num) to num
+        char e='5';
+        System.out.println(e-'0');                                                       // 5  
     }
 }
