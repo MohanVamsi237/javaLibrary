@@ -1,30 +1,37 @@
 import java.util.*;
-class Leetcode{
-    public static void main(){
+
+class Leetcode {
+    public static void main() {
         // stringbuilder to string
         StringBuilder sb = new StringBuilder("Hello");
         String str = sb.toString();
         System.out.println(str);
-        
+
         // convert num to binary string
-        int a1=5;
-        String s=Integer.toBinaryString(a1);
+        int a1 = 5;
+        String s = Integer.toBinaryString(a1);
         System.out.println(s);
 
-        //convert binarystring to num
-        String s2="101101";
-        int a2=Integer.parseInt(s2,2);
+        // convert binarystring to num
+        String s2 = "101101";
+        int a2 = Integer.parseInt(s2, 2);
         System.out.println(a2);
 
         // convert binary string to num using BigInteger
-        String binary="101101";
+        String binary = "101101";
         BigInteger num = new BigInteger(binary, 2);
         System.out.println(num);
 
+        // convert a string to its 8 bit ascii
+        char ch = 'a';
+        String bin = String.format("%8s", Integer.toBinaryString((int) ch)).replace(' ', '0');
+        System.out.println(bin);
+
         // to split string into two parts based on a symbol
-            // in the below example we are splitting the string into two parts based on the symbol '+'
-        String s3="1+3i";
-        String[] p1=s3.split("\\+");
+        // in the below example we are splitting the string into two parts based on the
+        // symbol '+'
+        String s3 = "1+3i";
+        String[] p1 = s3.split("\\+");
         System.out.println(p1[1]);
 
         // splitting of sentence into words despite multiple spaces
@@ -35,7 +42,7 @@ class Leetcode{
         }
 
         // replacing of a char in a string
-        int a=Integer.parseInt(p1[1].replace("i",""));
+        int a = Integer.parseInt(p1[1].replace("i", ""));
         System.out.println(a);
 
         // substring method
@@ -44,14 +51,14 @@ class Leetcode{
         System.out.println(sub);
 
         // sorting array of strings in lexicographical order
-        String[] arr = {"banana", "apple", "cherry"};
+        String[] arr = { "banana", "apple", "cherry" };
         Arrays.sort(arr);
         for (String x : arr) {
             System.out.println(x);
         }
-        
+
         // sort strings based on their length
-        String[] arr2 = {"apple", "hi", "banana"};
+        String[] arr2 = { "apple", "hi", "banana" };
         Arrays.sort(arr2, (c, d) -> c.length() - d.length());
         for (String y : arr2) {
             System.out.println(y);
@@ -67,27 +74,27 @@ class Leetcode{
         System.out.println("'" + s4.trim() + "'");
         System.out.println("'" + s4.stripTrailing() + "'");
 
-        // String to charArray 
+        // String to charArray
         String s5 = "Hello";
-        for(char c : s5.toCharArray()) {
+        for (char c : s5.toCharArray()) {
             System.out.println(c);
         }
 
         // check lowercase method
-        char ch=s4.charAt(2);
-        if(Character.isLowerCase(ch)){
+        char ch = s4.charAt(2);
+        if (Character.isLowerCase(ch)) {
             System.out.println("lowercase");
         }
-        
+
         // character is letter or digit
-        char ch2='v';
-        char ch3='0';
+        char ch2 = 'v';
+        char ch3 = '0';
         System.out.println(Character.isLetter(ch2));
         System.out.println(Character.isDigit(ch3));
 
         // contains method
-        String s6="abcde";
-        String s7="bc";
+        String s6 = "abcde";
+        String s7 = "bc";
         System.out.println(s6.contains(s7));
     }
 }
