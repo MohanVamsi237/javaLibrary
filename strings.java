@@ -1,6 +1,5 @@
 import java.util.*;
-
-class Leetcode {
+class strings {
     public static void main() {
         // stringbuilder to string
         StringBuilder sb = new StringBuilder("Hello");
@@ -46,8 +45,8 @@ class Leetcode {
         System.out.println(a);
 
         // substring method
-        String str = "Hello World";
-        String sub = str.substring(0, 5);
+        String string = "Hello World";
+        String sub = string.substring(0, 5);
         System.out.println(sub);
 
         // sorting array of strings in lexicographical order
@@ -81,8 +80,8 @@ class Leetcode {
         }
 
         // check lowercase method
-        char ch = s4.charAt(2);
-        if (Character.isLowerCase(ch)) {
+        char ch1 = s4.charAt(2);
+        if (Character.isLowerCase(ch1)) {
             System.out.println("lowercase");
         }
 

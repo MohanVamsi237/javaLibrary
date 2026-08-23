@@ -1,6 +1,6 @@
 public class technique {
     //combination nCk
-    long nCk(int n, int k) {
+    static long nCk(int n, int k) {
         if (k < 0 || k > n) return 0;
 
         long res = 1;
@@ -9,6 +9,7 @@ public class technique {
         }
         return res;
     }
-
-    
+    public static void main(String[] args) {
+        System.out.println(nCk(5, 2)); // Output: 10    
+    }
 }

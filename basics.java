@@ -1,7 +1,7 @@
 public class basics {
     public static void main(String[] args) {
         // use of long literal
-        long result = 2L * x;
+        long result = 2L * 5;
         System.out.println(result);
 
         // ASCII value of character
@@ -15,12 +15,14 @@ public class basics {
         System.out.println(num);                                                         // 2
 
         // char to char conversion
-        int num = 13;
-        char ch=(char)('z'-num);
-        System.out.println(ch);                                                          // m
+        int num1 = 13;
+        char ch1=(char)('z'-num1);
+        System.out.println(ch1);                                                          // m
 
         // char(num) to num
         char e='5';
-        System.out.println(e-'0');                                                       // 5  
+        System.out.println(e-'0');                                                       // 5
+        
+        
     }
 }
