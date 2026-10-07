@@ -26,6 +26,18 @@ class strings {
         String bin = String.format("%8s", Integer.toBinaryString((int) ch)).replace(' ', '0');
         System.out.println(bin);
 
+        // comparison of 2 strings lexicographically
+        String b1="10001";
+        String b2="11001";
+        int result = b1.compareTo(b2);
+        if (result < 0) {
+            System.out.println(b1 + " is less than " + b2);
+        } else if (result > 0) {
+            System.out.println(b1 + " is greater than " + b2);
+        } else {
+            System.out.println(b1 + " is equal to " + b2);
+        }
+
         // to split string into two parts based on a symbol
         // in the below example we are splitting the string into two parts based on the
         // symbol '+'
