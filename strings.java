@@ -17,9 +17,9 @@ class strings {
         System.out.println(a2);
 
         // convert binary string to num using BigInteger
-        String binary = "101101";
-        BigInteger num = new BigInteger(binary, 2);
-        System.out.println(num);
+        // String binary = "101101";
+        // BigInteger num = new BigInteger(binary, 2);
+        // System.out.println(num);
 
         // convert a string to its 8 bit ascii
         char ch = 'a';
