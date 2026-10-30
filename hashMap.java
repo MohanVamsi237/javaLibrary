@@ -15,5 +15,8 @@ public class hashMap {
             }
         }
         System.out.println(map);
+
+        // clearing the map
+        map.clear();
     }
 }
